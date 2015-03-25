@@ -11,7 +11,7 @@ int main(void)
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
 
 	GPIO_InitTypeDef ledy;
-	ledy.GPIO_Mode = GPIO_Mode_Out_OD;
+	ledy.GPIO_Mode = GPIO_Mode_Out_PP;
 	ledy.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15;
 	ledy.GPIO_Speed = GPIO_Speed_2MHz;
 
