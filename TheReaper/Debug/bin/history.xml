@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g2 -Map=TheReaper.map -O0 --gc-sections -LC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper -TC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper/arm-gcc-link.ld -g">
+      <target file="TheReaper.elf" lastModified="14c51a698a3">
+         <source file="..\obj\syscalls.o" lastModified="14c51a69396"/>
+         <source file="..\obj\main.o" lastModified="14c51a69242"/>
+      </target>
+   </processor>
+</history>
