@@ -1,9 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g2 -Map=TheReaper.map -O0 --gc-sections -LC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper -TC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper/arm-gcc-link.ld -g">
-      <target file="TheReaper.elf" lastModified="14c51a698a3">
-         <source file="..\obj\syscalls.o" lastModified="14c51a69396"/>
-         <source file="..\obj\main.o" lastModified="14c51a69242"/>
+      <target file="TheReaper.elf" lastModified="14c51cbcd4c">
+         <source file="..\obj\stm32f10x_fsmc.o" lastModified="14c51b30868"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="14c51b30a89"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="14c51b30fa9"/>
+         <source file="..\obj\stm32f10x_dma.o" lastModified="14c51b319ff"/>
+         <source file="..\obj\stm32f10x_sdio.o" lastModified="14c51b31893"/>
+         <source file="..\obj\misc.o" lastModified="14c51b31a97"/>
+         <source file="..\obj\stm32f10x_dbgmcu.o" lastModified="14c51b30720"/>
+         <source file="..\obj\stm32f10x_i2c.o" lastModified="14c51b31e87"/>
+         <source file="..\obj\stm32f10x_pwr.o" lastModified="14c51b3091d"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="14c51b3088a"/>
+         <source file="..\obj\stm32f10x_cec.o" lastModified="14c51b31723"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="14c51b307b6"/>
+         <source file="..\obj\stm32f10x_bkp.o" lastModified="14c51b31ff7"/>
+         <source file="..\obj\stm32f10x_can.o" lastModified="14c51b309db"/>
+         <source file="..\obj\stm32f10x_flash.o" lastModified="14c51b31689"/>
+         <source file="..\obj\syscalls.o" lastModified="14c51b314f4"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="14c51b31dbb"/>
+         <source file="..\obj\stm32f10x_iwdg.o" lastModified="14c51b32171"/>
+         <source file="..\obj\stm32f10x_wwdg.o" lastModified="14c51b31ced"/>
+         <source file="..\obj\stm32f10x_tim.o" lastModified="14c51b305b0"/>
+         <source file="..\obj\stm32f10x_rtc.o" lastModified="14c51b3048b"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="14c51b31378"/>
+         <source file="..\obj\stm32f10x_crc.o" lastModified="14c51b30ee8"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="14c51b311e1"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="14c51b3104a"/>
+         <source file="..\obj\stm32f10x_dac.o" lastModified="14c51b30c0e"/>
+         <source file="..\obj\main.o" lastModified="14c51cbc932"/>
       </target>
    </processor>
 </history>
