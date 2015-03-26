@@ -1,0 +1,58 @@
+--------------------
+		LEDs
+--------------------
+LED1	-	PC14
+LED2	-	PC15
+LED3	-	PC13
+LED4	-	PB6
+LED5	-	PB7
+LED6	-	PA12
+LED7	-	PA11
+LED8	-	PA8
+LED9	-	PC9
+LED10	-	PC8
+PWM5	-	PC7
+PWM6	-	PC6
+
+--------------------
+	COMMUNICATION
+--------------------
+RX		-	PA10
+TX		-	PA9
+RX2		-	PA3
+TX2		-	PA2
+SCL		-	PB10
+SDA		-	PB11
+SPI_SS	-	PB12
+SPI_SCK	-	PB13
+SPI_MISO-	PB14
+SPI_MOSI-	PB15
+
+--------------------
+		ADC
+--------------------
+BAT		-	PC0
+ADC1	-	PA6
+ADC2	-	PA7
+ADC3	-	PC4
+ADC4	-	PC5
+IPOM1	-	PC1
+IPOM2	-	PC2
+IPOM3	-	PA4
+IPOM4	-	PA5
+
+--------------------
+		MOTORS
+--------------------
+PWM1	-	PA0
+PWM2	-	PA1
+PWM3	-	PB0
+PWM4	-	PB1
+EN1		-	PB5
+EN2		-	PB3
+EN3		-	PC10
+EN4		-	PC12
+DIR1	-	PB4
+DIR2	-	PD2
+DIR3	-	PA15
+DIR4	-	PC11

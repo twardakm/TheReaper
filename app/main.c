@@ -3,12 +3,13 @@
 #include "system_stm32f10x.h"
 #include "stm32f10x_gpio.h"
 
+#include "LED.h"
+#include "APBClocks.h"
+
 int main(void)
 {
 	SystemInit(); // powinno byc na 72 MHz ale sprawdzic!
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+	initializeAPB();
 
 	GPIO_InitTypeDef ledy;
 	ledy.GPIO_Mode = GPIO_Mode_Out_PP;
