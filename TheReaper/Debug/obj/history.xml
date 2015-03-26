@@ -10,6 +10,9 @@
       <target file="LED.o" lastModified="14c5605563a">
          <source file="..\..\..\LED.c" lastModified="14c5605531c"/>
       </target>
+      <target file="SysTick.o" lastModified="14c5620f401">
+         <source file="..\..\..\SysTick.c" lastModified="14c5620f10f"/>
+      </target>
       <target file="stm32f10x_iwdg.o" lastModified="14c55d80839">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.c" lastModified="14c51aa64a3"/>
       </target>
@@ -85,8 +88,8 @@
       <target file="stm32f10x_usart.o" lastModified="14c55d7fb7f">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_usart.c" lastModified="14c51aa6531"/>
       </target>
-      <target file="main.o" lastModified="14c55fcf00d">
-         <source file="..\..\..\app\main.c" lastModified="14c55fbbc59"/>
+      <target file="main.o" lastModified="14c562029d8">
+         <source file="..\..\..\app\main.c" lastModified="14c562003fe"/>
       </target>
    </processor>
 </history>

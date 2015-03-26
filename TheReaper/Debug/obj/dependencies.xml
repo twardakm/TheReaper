@@ -153,11 +153,12 @@
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_pwr.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_rcc.h"/>
       </source>
-      <source file="..\..\..\app\main.c" lastModified="14c55fbc429">
+      <source file="..\..\..\app\main.c" lastModified="14c56200bce">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
          <include file="..\..\..\LED.h"/>
          <include file="..\..\..\APBClocks.h"/>
+         <include file="..\..\..\SysTick.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_adc.c" lastModified="14c51aa64c2">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_adc.h"/>
@@ -172,6 +173,11 @@
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_bkp.c" lastModified="14c51aa650f">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_bkp.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\SysTick.h" lastModified="14c561b8f28">
+         <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
+         <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
+         <include file="..\..\..\LED.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_dma.c" lastModified="14c51aa650d">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_dma.h"/>
@@ -217,6 +223,9 @@
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_i2c.h" lastModified="14c51aa64c7">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\LED.c" lastModified="14c5605531c">
+         <include file="..\..\..\LED.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_spi.h" lastModified="14c51aa64cf">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>

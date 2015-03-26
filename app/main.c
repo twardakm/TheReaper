@@ -5,13 +5,13 @@
 
 #include "LED.h"
 #include "APBClocks.h"
+#include "SysTick.h"
 
 int main(void)
 {
-	// powinno byc na 72 MHz ale sprawdzic!
-
 	initializeAPB();
 	initializeLEDGPIO();
+	initializeSysTick();
 
     while(1)
     {

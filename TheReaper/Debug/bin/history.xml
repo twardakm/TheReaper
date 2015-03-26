@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.9.3 -mcpu=cortex-m3 -mthumb -g2 -Map=TheReaper.map -O0 --gc-sections -LC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper -TC:\Users\Marcin\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\TheReaper/arm-gcc-link.ld -g">
-      <target file="TheReaper.elf" lastModified="14c56055a5c">
+      <target file="TheReaper.elf" lastModified="14c5620f65c">
          <source file="..\obj\LED.o" lastModified="14c5605563a"/>
          <source file="..\obj\stm32f10x_fsmc.o" lastModified="14c55d7f3b8"/>
          <source file="..\obj\stm32f10x_gpio.o" lastModified="14c55d7f5aa"/>
@@ -28,9 +28,10 @@
          <source file="..\obj\stm32f10x_usart.o" lastModified="14c55d7fb7f"/>
          <source file="..\obj\stm32f10x_crc.o" lastModified="14c55d7f838"/>
          <source file="..\obj\stm32f10x_adc.o" lastModified="14c55d7fad2"/>
+         <source file="..\obj\SysTick.o" lastModified="14c5620f401"/>
          <source file="..\obj\stm32f10x_exti.o" lastModified="14c55d7f960"/>
          <source file="..\obj\stm32f10x_dac.o" lastModified="14c55d7f641"/>
-         <source file="..\obj\main.o" lastModified="14c55fcf00d"/>
+         <source file="..\obj\main.o" lastModified="14c562029d8"/>
       </target>
    </processor>
 </history>

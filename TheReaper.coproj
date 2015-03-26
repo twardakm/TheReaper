@@ -89,6 +89,7 @@
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_rcc.c" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_rcc.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_conf.h" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_conf.h" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_adc.h" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_adc.h" type="1"/>
+    <File name="SysTick.h" path="SysTick.h" type="1"/>
     <File name="components/cmsis_core/core_sc300.h" path="components/coocox-master/cmsis_core/source/core_sc300.h" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_dma.c" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_dma.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x.h" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x.h" type="1"/>
@@ -141,6 +142,7 @@
     <File name="components" path="" type="2"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_adc.c" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_adc.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_rcc.h" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_rcc.h" type="1"/>
+    <File name="SysTick.c" path="SysTick.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_exti.c" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_exti.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_dac.c" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_dac.c" type="1"/>
     <File name="components/STM32F10x_MD_STDLIB/stm32f10x_spi.h" path="components/coocox-master/STM32F10x_MD_STDLIB/source/stm32f10x_spi.h" type="1"/>
