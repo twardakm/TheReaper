@@ -16,9 +16,17 @@
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_usart.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_rcc.h"/>
       </source>
+      <source file="..\..\..\USART.h" lastModified="14c5aa39aff">
+         <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
+         <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
+         <include file="..\..\..\PinDefines.h"/>
+      </source>
       <source file="..\..\..\APBClocks.h" lastModified="14c55bad346">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_gpio.h"/>
+      </source>
+      <source file="..\..\..\USART.c" lastModified="14c5b13774d">
+         <include file="..\..\..\USART.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.h" lastModified="14c51aa6496">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
@@ -31,9 +39,6 @@
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_flash.h" lastModified="14c51aa64e1">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
-      </source>
-      <source file="..\..\..\APBClocks.c" lastModified="14c55c320de">
-         <include file="..\..\..\APBClocks.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.c" lastModified="14c51aa64a3">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.h"/>
@@ -55,7 +60,7 @@
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.c" lastModified="14c55ed8b6a">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
       </source>
-      <source file="..\..\..\PinDefines.h" lastModified="14c559bbefe">
+      <source file="..\..\..\PinDefines.h" lastModified="14c5b129280">
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_tim.h" lastModified="14c51aa64ca">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
@@ -153,12 +158,13 @@
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_pwr.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_rcc.h"/>
       </source>
-      <source file="..\..\..\app\main.c" lastModified="14c56200bce">
+      <source file="..\..\..\app\main.c" lastModified="14c5b14dae3">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
          <include file="..\..\..\LED.h"/>
          <include file="..\..\..\APBClocks.h"/>
          <include file="..\..\..\SysTick.h"/>
+         <include file="..\..\..\USART.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_adc.c" lastModified="14c51aa64c2">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_adc.h"/>
@@ -201,6 +207,9 @@
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_dbgmcu.c" lastModified="14c51aa6538">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_dbgmcu.h"/>
+      </source>
+      <source file="..\..\..\SysTick.c" lastModified="14c5620f10f">
+         <include file="..\..\..\SysTick.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\cmsis_core\source\core_cmFunc.h" lastModified="14c519d977b">
       </source>

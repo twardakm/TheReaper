@@ -25,4 +25,14 @@
 #define LED10_GPIO	GPIOC
 #define LED10_PIN	GPIO_Pin_8
 
+#define RX_GPIO		GPIOA
+#define TX_GPIO		GPIOA
+#define RX_PIN		GPIO_Pin_10
+#define TX_PIN		GPIO_Pin_9
+
+#define RX2_GPIO	GPIOA
+#define TX2_GPIO	GPIOA
+#define RX2_PIN		GPIO_Pin_3
+#define TX2_PIN		GPIO_Pin_2
+
 #endif
