@@ -11,9 +11,9 @@
 #define LED3_GPIO	GPIOC
 #define LED3_PIN	GPIO_Pin_13
 #define LED4_GPIO	GPIOB
-#define LED4_PIN	GPIO_Pin_6
+#define LED4_PIN	GPIO_Pin_6	//USART1
 #define LED5_GPIO	GPIOB
-#define LED5_PIN	GPIO_Pin_7
+#define LED5_PIN	GPIO_Pin_7	//SysTick
 #define LED6_GPIO	GPIOA
 #define LED6_PIN	GPIO_Pin_12
 #define LED7_GPIO	GPIOA
