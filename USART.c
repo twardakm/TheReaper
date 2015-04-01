@@ -74,7 +74,17 @@ void USART1_IRQHandler(void)
 					 *
 					 */
 
+					uint8_t name[10] = {'T', 'h', 'e', ' ', 'R', 'e', 'a', 'p', 'e', 'r'};
+					int i = 0;
+					for (i = 0; i < 10; i++)
+					{
+						while ((USART1->SR & USART_FLAG_TXE) == RESET) {}
+						USART1->DR = name[i];
+					}
 
+					// Send line feed
+					while ((USART1->SR & USART_FLAG_TXE) == RESET) {}
+					USART1->DR = 0x0A;
 				}
 				break;
 			default:
