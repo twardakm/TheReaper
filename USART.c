@@ -14,9 +14,19 @@ void initializeUSART()
 	GPIO_Init(RX_GPIO, &usart_gpio);
 
 	usart_gpio.GPIO_Pin = TX_PIN;
-	usart_gpio.GPIO_Mode = GPIO_Mode_Out_PP;
+	usart_gpio.GPIO_Mode = GPIO_Mode_AF_PP;
 
 	GPIO_Init(TX_GPIO, &usart_gpio);
+
+	usart_gpio.GPIO_Pin = RX2_PIN;
+	usart_gpio.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+
+	GPIO_Init(RX2_GPIO, &usart_gpio);
+
+	usart_gpio.GPIO_Pin = TX2_PIN;
+	usart_gpio.GPIO_Mode = GPIO_Mode_AF_PP;
+
+	GPIO_Init(TX2_GPIO, &usart_gpio);
 
 	/*
 	 * USART configuration
@@ -36,33 +46,44 @@ void initializeUSART()
 	USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 
 	NVIC_EnableIRQ(USART1_IRQn);
+
+	/*
+	 * USART2
+	 */
+
+	USART_Cmd(USART2, ENABLE);
+
+	USART_Init(USART2, &usart_conf);
+	USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);
+
+	NVIC_EnableIRQ(USART2_IRQn);
 }
 
-void USART1_IRQHandler(void)
+void USARTInterrupt(USART_TypeDef *USARTx)
 {
 	/* RXNE handler */
-	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
+	if(USART_GetITStatus(USARTx, USART_IT_RXNE) != RESET)
 	{
 		LED4_GPIO->ODR ^= LED4_PIN;
 
 		//Disable interrupt until all data is received
-		USART1->CR1 &= ~USART_CR1_RXNEIE;
+		USARTx->CR1 &= ~USART_CR1_RXNEIE;
 
 		/*
 		 * Proceed commands
 		 */
 
-		uint8_t data = USART1->DR;
+		uint8_t data = USARTx->DR;
 		if (data == 0xFF) // start command
 		{
-			while((USART1->SR & USART_FLAG_RXNE) == RESET) {} //wait until next data
-			data = USART1->DR;
+			while((USARTx->SR & USART_FLAG_RXNE) == RESET) {} //wait until next data
+			data = USARTx->DR;
 
 			switch(data)
 			{
 			case 0x00: //who am I?
-				while ((USART1->SR & USART_FLAG_RXNE) == RESET) {} //wait until line feed
-				data = USART1->DR;
+				while ((USARTx->SR & USART_FLAG_RXNE) == RESET) {} //wait until line feed
+				data = USARTx->DR;
 				if (data == 0x0A) //line feed, everything ok.
 				{
 					LED1_GPIO->ODR ^= LED1_PIN;
@@ -78,13 +99,13 @@ void USART1_IRQHandler(void)
 					int i = 0;
 					for (i = 0; i < 10; i++)
 					{
-						while ((USART1->SR & USART_FLAG_TXE) == RESET) {}
-						USART1->DR = name[i];
+						while ((USARTx->SR & USART_FLAG_TXE) == RESET) {}
+						USARTx->DR = name[i];
 					}
 
 					// Send line feed
-					while ((USART1->SR & USART_FLAG_TXE) == RESET) {}
-					USART1->DR = 0x0A;
+					while ((USARTx->SR & USART_FLAG_TXE) == RESET) {}
+					USARTx->DR = 0x0A;
 				}
 				break;
 			default:
@@ -94,11 +115,21 @@ void USART1_IRQHandler(void)
 		else
 		{
 			// error occured start interrupt
-			USART1->CR1 |= USART_CR1_RXNEIE;
+			USARTx->CR1 |= USART_CR1_RXNEIE;
 			return;
 		}
 
 		//Enable interrupt
-		USART1->CR1 |= USART_CR1_RXNEIE;
+		USARTx->CR1 |= USART_CR1_RXNEIE;
 	}
+}
+
+void USART1_IRQHandler(void)
+{
+	USARTInterrupt(USART1);
+}
+
+void USART2_IRQHandler(void)
+{
+	USARTInterrupt(USART2);
 }

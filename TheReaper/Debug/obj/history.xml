@@ -16,8 +16,8 @@
       <target file="stm32f10x_iwdg.o" lastModified="14c55d80839">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.c" lastModified="14c51aa64a3"/>
       </target>
-      <target file="USART.o" lastModified="14c75aeb434">
-         <source file="..\..\..\USART.c" lastModified="14c75aeaf8f"/>
+      <target file="USART.o" lastModified="14c79604bcb">
+         <source file="..\..\..\USART.c" lastModified="14c796029af"/>
       </target>
       <target file="stm32f10x_crc.o" lastModified="14c55d7f838">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_crc.c" lastModified="14c51aa651f"/>
@@ -88,11 +88,11 @@
       <target file="stm32f10x_dma.o" lastModified="14c55d80000">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_dma.c" lastModified="14c51aa650d"/>
       </target>
-      <target file="main.o" lastModified="14c75b423a6">
-         <source file="..\..\..\app\main.c" lastModified="14c75b40ea0"/>
-      </target>
       <target file="stm32f10x_usart.o" lastModified="14c55d7fb7f">
          <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_usart.c" lastModified="14c51aa6531"/>
+      </target>
+      <target file="main.o" lastModified="14c79576a09">
+         <source file="..\..\..\app\main.c" lastModified="14c7952d587"/>
       </target>
    </processor>
 </history>
