@@ -59,13 +59,19 @@ void initializeUSART()
 	NVIC_EnableIRQ(USART2_IRQn);
 }
 
+void sendLineFeed(USART_TypeDef *USARTx)
+{
+	// Send line feed
+	while ((USARTx->SR & USART_FLAG_TXE) == RESET) {}
+	USARTx->DR = 0x0A;
+}
+
 void USARTInterrupt(USART_TypeDef *USARTx)
 {
 	/* RXNE handler */
 	if(USART_GetITStatus(USARTx, USART_IT_RXNE) != RESET)
 	{
 		LED4_GPIO->ODR ^= LED4_PIN;
-
 		//Disable interrupt until all data is received
 		USARTx->CR1 &= ~USART_CR1_RXNEIE;
 
@@ -86,8 +92,6 @@ void USARTInterrupt(USART_TypeDef *USARTx)
 				data = USARTx->DR;
 				if (data == 0x0A) //line feed, everything ok.
 				{
-					LED1_GPIO->ODR ^= LED1_PIN;
-
 					/*
 					 * Send my name
 					 *
@@ -103,9 +107,7 @@ void USARTInterrupt(USART_TypeDef *USARTx)
 						USARTx->DR = name[i];
 					}
 
-					// Send line feed
-					while ((USARTx->SR & USART_FLAG_TXE) == RESET) {}
-					USARTx->DR = 0x0A;
+					sendLineFeed(USARTx);
 				}
 				break;
 			default:

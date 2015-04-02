@@ -11,5 +11,6 @@
 void initializeUSART();
 
 void USARTInterrupt(USART_TypeDef *USARTx);
+void sendLineFeed(USART_TypeDef *USARTx);
 
 #endif
