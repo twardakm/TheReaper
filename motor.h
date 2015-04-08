@@ -9,5 +9,6 @@
 #include "stm32f10x_tim.h"
 
 void initializePWMTimer();
+void initializeDirectionOutput();
 
 #endif

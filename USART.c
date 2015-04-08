@@ -124,6 +124,11 @@ void USARTInterrupt(USART_TypeDef *USARTx)
 					while((USARTx->SR & USART_FLAG_RXNE) == RESET) {}
 					if (USARTx->DR == 0x0A)
 					{
+						// if the oldest bit is 1 set direction to 1
+						if (data & (0b1 << 7))
+							MOTOR_DIR_GPIO->ODR |= MOTOR_DIR_PIN;
+						else
+							MOTOR_DIR_GPIO->ODR &= ~(MOTOR_DIR_PIN);
 						// first bit as direction
 						data &= ~(0b1 << 7);
 						// 2* because I receive 7 bits (first bit - direction) and timer arr is 8 bit

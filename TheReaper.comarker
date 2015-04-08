@@ -16,8 +16,8 @@
 <attrib name="registered" value="true"/>
 <attrib name="path" value="/TheReaper/components/STM32F10x_MD_STDLIB/system_stm32f10x.c"/>
 <attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\Users\Marcin\CoIDE\workspace\TheReaper\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.c"/>
-<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
 </marker>
 </breakpoint>
 </breakpoints>

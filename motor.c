@@ -34,6 +34,18 @@ void initializePWMTimer()
 	TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
 }
 
+void initializeDirectionOutput()
+{
+	GPIO_PinRemapConfig(GPIO_Remap_SWJ_NoJTRST,ENABLE); // Disable NJTRST, PB4 is Alternate Function
+	GPIO_InitTypeDef dir;
+	dir.GPIO_Mode = GPIO_Mode_Out_PP;
+	dir.GPIO_Speed = GPIO_Speed_2MHz;
+	dir.GPIO_Pin = MOTOR_DIR_PIN;
+	GPIO_Init(MOTOR_DIR_GPIO, &dir);
+
+	MOTOR_DIR_GPIO->ODR &= ~(MOTOR_DIR_PIN);
+}
+
 void TIM2_IRQHandler(void)
 {
 	if (TIM2->SR & TIM_SR_UIF)

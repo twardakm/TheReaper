@@ -40,4 +40,7 @@
 #define TURN_SERVO_PWM_GPIO	GPIOA
 #define TURN_SERVO_PWM_PIN	GPIO_Pin_1
 
+#define MOTOR_DIR_GPIO	GPIOB
+#define MOTOR_DIR_PIN	GPIO_Pin_4
+
 #endif

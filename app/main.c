@@ -15,7 +15,9 @@ int main(void)
 	initializeAPB();
 	initializeLEDGPIO();
 	initializeSysTick();
+
 	initializePWMTimer();
+	initializeDirectionOutput();
 
 	initializeUSART();
 
