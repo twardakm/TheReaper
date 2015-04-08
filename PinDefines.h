@@ -35,4 +35,9 @@
 #define RX2_PIN		GPIO_Pin_3
 #define TX2_PIN		GPIO_Pin_2
 
+#define MOTOR_PWM_GPIO	GPIOA
+#define MOTOR_PWM_PIN	GPIO_Pin_0
+#define TURN_SERVO_PWM_GPIO	GPIOA
+#define TURN_SERVO_PWM_PIN	GPIO_Pin_1
+
 #endif

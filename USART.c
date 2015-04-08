@@ -110,6 +110,27 @@ void USARTInterrupt(USART_TypeDef *USARTx)
 					sendLineFeed(USARTx);
 				}
 				break;
+			case 0x10:
+			case 0x11: // Motor PWM
+				while ((USARTx->SR & USART_FLAG_RXNE) == RESET) {}
+				data = USARTx->DR;
+
+				if (data == 0x20) // set motor PWM
+				{
+					while((USARTx->SR & USART_FLAG_RXNE) == RESET) {}
+					data = USARTx->DR;
+
+					//wait until line feed
+					while((USARTx->SR & USART_FLAG_RXNE) == RESET) {}
+					if (USARTx->DR == 0x0A)
+					{
+						// first bit as direction
+						data &= ~(0b1 << 7);
+						// 2* because I receive 7 bits (first bit - direction) and timer arr is 8 bit
+						TIM2->CCR1 = 2 * data;
+					}
+				}
+				break;
 			default:
 				break;
 			}
