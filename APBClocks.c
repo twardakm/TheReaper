@@ -34,4 +34,8 @@ void initializeAPB()
 	 * TIM2 - Motor PWM
 	 */
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	/*
+	 * TIM 3 - Turn Servo PWM
+	 */
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3, ENABLE);
 }

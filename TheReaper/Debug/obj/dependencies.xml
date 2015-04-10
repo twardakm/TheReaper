@@ -31,7 +31,7 @@
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_gpio.h"/>
       </source>
-      <source file="..\..\..\USART.c" lastModified="14c99eeab95">
+      <source file="..\..\..\USART.c" lastModified="14ca2e95820">
          <include file="..\..\..\USART.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.h" lastModified="14c51aa6496">
@@ -46,7 +46,7 @@
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_flash.h" lastModified="14c51aa64e1">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
       </source>
-      <source file="..\..\..\APBClocks.c" lastModified="14c98848974">
+      <source file="..\..\..\APBClocks.c" lastModified="14ca2d7ac75">
          <include file="..\..\..\APBClocks.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_iwdg.c" lastModified="14c51aa64a3">
@@ -69,7 +69,7 @@
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\system_stm32f10x.c" lastModified="14c55ed8b6a">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
       </source>
-      <source file="..\..\..\PinDefines.h" lastModified="14c99e8e6d3">
+      <source file="..\..\..\PinDefines.h" lastModified="14ca2af37bf">
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_tim.h" lastModified="14c51aa64ca">
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x.h"/>
@@ -95,7 +95,7 @@
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_wwdg.h"/>
          <include file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_rcc.h"/>
       </source>
-      <source file="..\..\..\NVIC.c" lastModified="14c99688da1">
+      <source file="..\..\..\NVIC.c" lastModified="14ca2ae2ed0">
          <include file="..\..\..\NVIC.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F10x_MD_STDLIB\source\stm32f10x_conf.h" lastModified="14c51aa6515">
